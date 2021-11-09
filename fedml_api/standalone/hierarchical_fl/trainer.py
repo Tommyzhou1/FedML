@@ -3,9 +3,9 @@ import numpy as np
 
 from fedml_api.standalone.hierarchical_fl.group import Group
 from fedml_api.standalone.hierarchical_fl.client import Client
-from fedml_api.standalone.fedavg.fedavg_trainer import FedAvgTrainer
+from fedml_api.standalone.fedavg.fedavg_api import FedAvgAPI
 
-class Trainer(FedAvgTrainer):
+class Trainer(FedAvgAPI):
 
     def setup_clients(self, train_data_local_num_dict, train_data_local_dict, test_data_local_dict):
         logging.info("############setup_clients (START)#############")

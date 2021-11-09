@@ -49,5 +49,5 @@ if __name__ == "__main__":
     model = create_model(args, model_name=args.model, output_dim=dataset[7])
     logging.info(model)
 
-    trainer = Trainer(dataset, model, device, args)
+    trainer = Trainer(dataset, device, args, model)
     trainer.train()
